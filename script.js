@@ -141,7 +141,7 @@ function moveCells(event) {
 
 function checkWin() {
   gameArray = Array.from(document.querySelectorAll('td')).map(el => el.innerText);
-  const standard = [...gameArray].sort().splice(1);
+  const standard = [...gameArray].sort((a, b) => +a - +b).splice(1);
   standard.push('');
 
   if (gameArray.toString() === standard.toString()) {
