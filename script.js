@@ -38,6 +38,8 @@ function newGame() {
 function startGame(fieldsCount) {
   reset();
 
+  document.body.addEventListener('keydown', event => event.code === 'Escape' && newGame());
+
   const table = document.createElement('table');
   gameArray = [];
   for (let i = 0; i < fieldsCount**2 - 1; i++) gameArray.push(i+1);
