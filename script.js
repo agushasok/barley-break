@@ -58,6 +58,12 @@ function startGame(fieldsCount) {
   table.querySelectorAll('td').item(fieldsCount**2-1).classList.add('empty');
   gameFieldEl.append(table);
 
+  const backBtn = document.createElement('button');
+  backBtn.classList.add('back-btn');
+  backBtn.innerText = 'Back';
+  backBtn.addEventListener('click', newGame);
+  gameFieldEl.append(backBtn);
+
   cellClicks();
 
   for (let i = 0; i < 50; i++) {

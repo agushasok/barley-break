@@ -12,6 +12,7 @@ body {
 .gameField {
     width: 600px;
     height: 600px;
+    position: relative;
     background-color: #b6d994;
     margin: auto;
     display: flex;
@@ -54,4 +55,12 @@ td {
 
 .empty {
     background-color: #807662;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 20px;
 }
