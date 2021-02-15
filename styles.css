@@ -1,0 +1,57 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+}
+
+.gameField {
+    width: 600px;
+    height: 600px;
+    background-color: #b6d994;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background-color: #645b4d;
+}
+
+.play-button {
+    height: 30px;
+}
+
+.play-button + .play-button {
+    margin-top: 20px;
+}
+
+.new-game-btn {
+    height: 40px;
+    font-weight: bold;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color: #645b4d;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+.empty {
+    background-color: #807662;
+}
