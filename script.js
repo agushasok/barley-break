@@ -1,5 +1,6 @@
 const gameFieldEl = document.querySelector('.gameField');
 let gameArray = [];
+const aaa = 1;
 
 function reset() {
   gameFieldEl.innerHTML = '';
