@@ -14,7 +14,7 @@ function newGameClicks() {
   })
 }
 
-function newGame() {
+function aaaaaaaaaanewGame() {
   reset();
 
   const easyBtn = document.createElement('button');
